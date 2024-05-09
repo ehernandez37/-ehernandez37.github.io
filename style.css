@@ -1,0 +1,27 @@
+
+body {
+    background:rgb(245, 212, 217)
+}
+* {
+    outline: 1px dotted gray;
+  }
+  
+  main {
+    background: peachpuff;
+    
+    width: 40em;
+    
+    margin-inline: auto;
+    
+  }
+  
+  
+  main img {
+    width: 100%;
+    display: block;
+  }
+
+  h1{
+
+
+  }

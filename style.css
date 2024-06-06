@@ -1,27 +1,88 @@
 
-body {
-    background:rgb(245, 212, 217)
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+:root{
+
+  --headingfont("Josefin Sans", sans-serif);
+
 }
-* {
-    outline: 1px dotted gray;
-  }
-  
-  main {
-    background: peachpuff;
-    
-    width: 40em;
-    
-    margin-inline: auto;
-    
-  }
-  
-  
-  main img {
-    width: 100%;
-    display: block;
-  }
 
-  h1{
+main {
+  width: 74%;
+  margin: 0 auto;
+  padding: 53px;
+  
+  background: #ffffff54;
+}
+
+img{
 
 
-  }
+  transform: scale(0.5);
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 2px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* .row {
+  display: flex;
+ 
+}
+
+.column {
+  flex: 43%;
+  padding: 1px;
+} */
+
+body {
+  font-family: var(--primaryfont);
+  
+  background: #f05053;  /* fallback for old browsers */
+
+background-image: linear-gradient(to right top, #e1eec3, #f05053);
+}
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+
+
+header {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: rgb(244, 189, 168);
+  color: white;
+}
+
+
+.main-heading{
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+}
+
+
+.main-heading h1{
+  font-size: 50px;
+}
+header nav {
+  position: fixed;
+  background: lightcoral;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  
+}

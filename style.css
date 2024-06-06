@@ -85,4 +85,29 @@ header nav {
   z-index: 1;
   top: 0;
   
+
 }
+
+a:link {
+  font-size: 1em;
+  background: pink;
+  transition: all 1s;
+}
+
+/* Last Frame */
+a:hover {
+  background: lightcoral;
+  font-size: 2em;
+}
+
+
+nav ul {
+
+display: flex;
+flex-direction: row;
+justify-content:space-evenly;
+  width:100%;
+  height:40px;
+
+}
+

@@ -1,77 +1,56 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-
-:root{
-
+:root {
   --headingfont: "Josefin Sans", sans-serif;
   --hcolor: #AA336A;
-
 }
 
 main {
   width: 74%;
   margin: 0 auto;
   padding: 53px;
-  
   background: #ffffff54;
 }
 
-img{
-
-
-  transform: scale(0.5);
-  gap: 1em;
-  margin: 0;
+img {
+  width: 100%;
+  height: auto;
 }
 
+/* Modified code: Set max-width for columns */
 .column {
-  float: left;
-  width: 33.33%;
-  padding: 2px;
+  flex: 1;
+  padding: 5px;
+  max-width: 24%; /* Ensures images are displayed in a flexible grid */
 }
 
-/* Clear floats after image containers */
-.row:{
-  content: "";
-  clear: both;
-  display: table;
-}
-/* .row {
+/* Modified code: Allows wrapping of flex items */
+.row {
   display: flex;
- 
+  flex-wrap: wrap; /* Allows items to wrap */
+  justify-content: space-between;
 }
-
-.column {
-  flex: 43%;
-  padding: 1px;
-} */
 
 body {
   font-family: var(--primaryfont);
-  
   background: #f05053;  /* fallback for old browsers */
-
-background-image: linear-gradient(to right top, #e1eec3, #f05053);
-}
-h1{
-
-color: var(--hcolor);
-font-family: var(--headingfont);
-
+  background-image: linear-gradient(to right top, #e1eec3, #f05053);
 }
 
-h2{
-
+h1 {
   color: var(--hcolor);
   font-family: var(--headingfont);
-  
-  }
-p{
-
-color: white;
-
 }
+
+h2 {
+  color: var(--hcolor);
+  font-family: var(--headingfont);
+}
+
+p {
+  color: white;
+}
+
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
@@ -83,18 +62,17 @@ blockquote {
   border-left: solid 10px rgb(223, 92, 44);
   padding-left: 20px;
 }
+
 span {
   color: rgb(223, 92, 44);
-  
   background: pink;
   margin: 10px;
   padding: 10px;
   border-radius: 20px;
-
   font-size: 4rem;
   float: left;
-  
 }
+
 header {
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
@@ -102,32 +80,28 @@ header {
   color: white;
 }
 
-
-.main-heading{
+.main-heading {
   max-width: 800px;
   text-align: center;
   margin: auto;
 }
 
-
-.main-heading h1{
+.main-heading h1 {
   font-size: 50px;
 }
+
 header nav {
   position: fixed;
   background: lightcoral;
   width: 100%;
   z-index: 1;
   top: 0;
-  
-
 }
 
-a:active{
-
-color:aqua;
-
+a:active {
+  color: aqua;
 }
+
 a:link {
   font-size: 1em;
   background: pink;
@@ -144,14 +118,10 @@ a:hover {
   color: purple;
 }
 
-
 nav ul {
-
-display: flex;
-flex-direction: row;
-justify-content:space-evenly;
-  width:100%;
-  height:40px;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 40px;
 }
-

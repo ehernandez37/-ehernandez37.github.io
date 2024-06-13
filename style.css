@@ -17,14 +17,14 @@ img {
   height: auto;
 }
 
-/* Modified code: Set max-width for columns */
+
 .column {
   flex: 1;
   padding: 5px;
-  max-width: 24%; /* Ensures images are displayed in a flexible grid */
+  max-width: 24%; 
 }
 
-/* Modified code: Allows wrapping of flex items */
+
 .row {
   display: flex;
   flex-wrap: wrap; /* Allows items to wrap */
@@ -51,7 +51,7 @@ p {
   color: white;
 }
 
-/* Style the header with a grey background and some padding */
+
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
